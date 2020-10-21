@@ -1,11 +1,13 @@
 number = ARGV[0].to_i
 
+acum = 0
 i = 0
-suma = 2
+sum = 0
 
-for i in (2..number)
-  suma += 2
+while i < number
+  acum += 2
   i += 1
+  sum += acum
 end
 
-puts suma
+puts sum
