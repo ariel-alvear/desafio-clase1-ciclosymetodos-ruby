@@ -1,27 +1,54 @@
 password = ARGV[0].length
-acum = 1
+number1 = password * 26
+letter = "a"
 
-#n! / a!b!c!
-productonumerador = 1
-for i in (1..26)
-  print i
-  puts productonumerador
-  productonumerador *= acum + 1
+suma = 0
+
+if password == 1
+  while (letter != "aa")
+    letter = letter.next
+    suma +=1
+  end
+elsif password == 2
+  while (letter != "aaa")
+    letter = letter.next
+    suma += 1
+  end
+elsif password == 3
+  while (letter != "aaaa")
+    letter = letter.next
+    suma += 1
+  end
+elsif password == 4
+  while (letter != "aaaaa")
+    letter = letter.next
+    suma += 1
+  end
+elsif password == 5
+  while (letter != "aaaaaa")
+    letter = letter.next
+    suma += 1
+  end
+elsif password == 6
+  while (letter != "aaaaaaa")
+    letter = letter.next
+    suma += 1
+  end
+elsif password == 7
+  while (letter != "aaaaaaaa")
+    letter = letter.next
+    suma += 1
+  end
+elsif password == 8
+  while (letter != "aaaaaaaaa")
+    letter = letter.next
+    suma += 1
+  end
+elsif password == 9
+  while (letter != "aaaaaaaaaa")
+    letter = letter.next
+    suma += 1
+  end
 end
 
-productodenominador1 = 1
-for f in (1..password)
-  productodenominador1 *= f
-end
-
-productodenominador2 = 1
-for g in (1..27)
-  productodenominador2 *= g
-end
-
-
-puts productonumerador
-puts productodenominador1
-puts productodenominador2
-puts "\n"
-puts productonumerador / (productodenominador1 * productodenominador2)
+puts "los intentos necesarios para hackear una clave de #{password} dígitos, es #{suma}"
