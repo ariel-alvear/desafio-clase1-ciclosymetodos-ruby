@@ -1,12 +1,13 @@
 number = ARGV[0].to_i
-letter = "a"
 
-i = 0
-
-while i < number
-  print letter
-  i += 1
-  letter = letter.next
+def gen(x)
+  i = 0
+  letter = "a"
+  while i < x
+    print letter
+    i += 1
+    letter = letter.next
+  end
 end
 
-print "\n"
+puts gen(number)
