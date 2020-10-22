@@ -7,4 +7,4 @@ while letter != password
   sum += 1
 end
 
-puts sum
+puts "#{sum} intentos"
